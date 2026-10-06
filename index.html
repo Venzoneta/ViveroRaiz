@@ -7,27 +7,106 @@
     <title>Login - Raiz</title>
     <script src=""></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/styles.css" />
     <!-- <link rel="" href="./index.html" /> -->
 </head>
 
-<body>
-    <header class="header-vivero">
-        <img src="/components/images/logo-vivero-raiz.png" alt="Logo Raiz" class="logo-vivero-raiz">
+<body class="pagina-inicio">    <header class="header-vivero">
+        <a href="index.html"> <img src="./components/images/logo-vivero-raiz.png" alt="Logo Raíz"
+                class="logo-vivero-raiz"></a>
+        <div class="botones-usuario">
+            <a href="./login.html" class="boton-login">Login</a>
+            <a href="./registro.html" class="boton-registro">Register</a>
+        </div>
     </header>
     <nav class="nav-vivero">
         <a href="./index.html">Inicio</a>
         <a href="./catalogo.html">Catálogo</a>
         <a href="./planta.html">Plantas</a>
         <a href="./contacto.html">Contacto</a>
+        <a href="./nosotros.html">Nosotros</a>
     </nav>
 
-    <section class="banner-vivero"></section>
-    <section></section>
-    <footer></footer>
+    <main class="inicio-contenedor">
+
+    <section class="banner-inicio">
+        <img
+            src="./components/images/banner.jpg"
+            alt="Plantas del Vivero Raíz"
+        >
+
+        <div class="banner-contenido">
+            <h1>Plantas para llenar de vida tu hogar</h1>
+
+            <p>
+                Descubrí nuestra variedad de plantas de interior y exterior.
+            </p>
+
+            <a href="./catalogo.html" class="boton-banner">
+                Ver catálogo
+            </a>
+        </div>
+    </section>
+    <section class="galeria-inicio">
+        <h2>Conocé nuestras plantas</h2>
+
+        <div class="grilla-inicio">
+            <a href="./catalogo.html" class="foto-inicio">
+                <img
+                    src="./components/images/areca.jpg"
+                    alt="Planta Areca"
+                >
+                <h3>Areca</h3>
+            </a>
+
+            <a href="./catalogo.html" class="foto-inicio">
+                <img
+                    src="./components/images/alocasia-amazonica.jpg"
+                    alt="Alocasia Amazónica"
+                >
+                <h3>Alocasia Amazónica</h3>
+            </a>
+
+            <a href="./catalogo.html" class="foto-inicio">
+                <img
+                    src="./components/images/nephrolepsis.jpg"
+                    alt="Helecho Espada"
+                >
+                <h3>Helecho Espada</h3>
+            </a>
+
+            <a href="./catalogo.html" class="foto-inicio">
+                <img
+                    src="./components/images/azalea-jap-2-3l-vda-1530.jpg"
+                    alt="Azalea Japónica"
+                >
+                <h3>Azalea Japónica</h3>
+            </a>
+
+            <a href="./catalogo.html" class="foto-inicio">
+                <img
+                    src="./components/images/gardenia-jasminoides-m13.jpg"
+                    alt="Gardenia Jasminoides"
+                >
+                <h3>Gardenia</h3>
+            </a>
+
+            <a href="./catalogo.html" class="foto-inicio">
+                <img
+                    src="./components/images/lavandula-stoechas-v14b.jpg"
+                    alt="Lavandula Stoechas"
+                >
+                <h3>Lavandula</h3>
+            </a>
+        </div>
+    </section>
+</main>
+    <footer class="footer-vivero">
+        <p>© 2026 Vivero Raíz - Todos los derechos reservados.</p>
+    </footer>
 </body>
 
 </html>

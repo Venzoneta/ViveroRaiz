@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Raiz</title>
+    <script src=""></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <!-- <link rel="" href="./index.html" /> -->
+</head>
+
+<body class="pagina-contacto">
+    <header class="header-vivero">
+        <a href="index.html"> <img src="./components/images/logo-vivero-raiz.png" alt="Logo Raíz"
+                class="logo-vivero-raiz"></a>
+        <div class="botones-usuario">
+            <a href="./login.html" class="boton-login">Login</a>
+            <a href="./registro.html" class="boton-registro">Register</a>
+        </div>
+    </header>
+    <nav class="nav-vivero">
+        <a href="./index.html">Inicio</a>
+        <a href="./catalogo.html">Catálogo</a>
+        <a href="./planta.html">Plantas</a>
+        <a href="./contacto.html">Contacto</a>
+                <a href="./nosotros.html">Nosotros</a>
+
+    </nav>
+
+    <main class="contacto-contenedor">
+
+        <section class="contacto-formulario">
+            <h1>¡Preguntanos lo que quieras!</h1>
+
+            <p class="contacto-introduccion">
+                Completá el formulario y nos comunicaremos con vos.
+            </p>
+
+            <form action="#" method="post">
+                <div class="campo-contacto">
+                    <label for="nombre">Nombre *</label>
+
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div class="campo-contacto">
+                    <label for="email">Correo electrónico *</label>
+
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="campo-contacto">
+                    <label for="asunto">Asunto</label>
+
+                    <input type="text" id="asunto" name="asunto">
+                </div>
+
+                <div class="campo-contacto">
+                    <label for="mensaje">Mensaje</label>
+
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="boton-contacto">
+                    Enviar mensaje
+                </button>
+            </form>
+        </section>
+
+        <aside class="contacto-informacion">
+            <div class="bloque-informacion">
+                <h2>Información de contacto</h2>
+
+                <p>
+                    <strong>Dirección:</strong><br>
+                    Avenida Siempre Verde 123, Buenos Aires
+                </p>
+
+                <p>
+                    <strong>Correo:</strong><br>
+                    contacto@viveroraiz.com
+                </p>
+
+                <p>
+                    <strong>Teléfono:</strong><br>
+                    +54 11 1234-5678
+                </p>
+            </div>
+
+            <div class="bloque-horarios">
+                <h2>Horarios</h2>
+
+                <div class="horario">
+                    <span>Lunes a viernes</span>
+                    <span>09:00 a 18:30</span>
+                </div>
+
+                <div class="horario">
+                    <span>Sábado</span>
+                    <span>09:00 a 13:00</span>
+                </div>
+
+                <div class="horario">
+                    <span>Domingo</span>
+                    <span>Cerrado</span>
+                </div>
+            </div>
+        </aside>
+    </main>
+<footer class="footer-vivero">
+        <p>© 2026 Vivero Raíz - Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>

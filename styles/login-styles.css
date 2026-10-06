@@ -146,8 +146,6 @@ input {
 
 .overlay {
 	background: #C5C7B8;
-	background: -webkit-linear-gradient(to right, #5F7351, #BABFAE);
-	background: linear-gradient(to right, #5F7351, #BABFAE);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 0;
@@ -192,6 +190,3 @@ input {
 	transform: translateX(0);
 }
 
-.container.right-panel-active .overlay-right {
-	transform: translateX(20%);
-}
