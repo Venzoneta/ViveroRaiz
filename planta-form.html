@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de planta | Vivero Raíz</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="components/scripts/sesion.js" defer></script>
+    <script src="components/scripts/datos.js" defer></script>
+    <script src="components/scripts/planta-form.js" defer></script>
+    <script src="components/scripts/validaciones.js" defer></script>
+</head>
+<body data-protegida="true">
+    <header class="header-vivero">
+        <a href="index.html"><img src="components/images/logo-vivero-raiz.png" alt="Logo de Vivero Raíz" class="logo-vivero-raiz"></a>
+        <button type="button" class="boton-menu" aria-expanded="false" aria-controls="menu-principal">Menú</button>
+        <div class="botones-usuario">
+            <a href="login.html" class="boton-login">Ingresar</a>
+            <a href="registro.html" class="boton-registro">Registrarse</a>
+        </div>
+    </header>
+    <nav class="nav-vivero" id="menu-principal">
+        <a href="index.html">Inicio</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="listado.html">Intranet</a>
+    </nav>
+
+    <main class="intranet-contenedor formulario-planta-contenedor">
+        <p class="etiqueta-seccion">Administración</p>
+        <h1 id="titulo-form-planta">Agregar planta</h1>
+
+        <form id="form-planta" class="form-planta" novalidate>
+            <fieldset>
+                <legend>Información principal</legend>
+                <div class="grilla-formulario">
+                    <label>Nombre
+                        <input id="nombre" name="nombre" type="text" required>
+                    </label>
+                    <label>Nombre científico
+                        <input id="nombreCientifico" name="nombreCientifico" type="text" required>
+                    </label>
+                    <label>Categoría
+                        <select id="categoria" name="categoria" required>
+                            <option value="">Seleccionar</option>
+                            <option value="interior">Interior</option>
+                            <option value="exterior">Exterior</option>
+                            <option value="suculenta">Suculenta</option>
+                            <option value="aromática">Aromática</option>
+                        </select>
+                    </label>
+                    <label>Foto
+                        <input id="foto" name="foto" type="text" required>
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Cuidados</legend>
+                <div class="grupo-opciones">
+                    <span>Luz</span>
+                    <label><input name="luz" type="radio" value="sol pleno" required> Sol pleno</label>
+                    <label><input name="luz" type="radio" value="media sombra"> Media sombra</label>
+                    <label><input name="luz" type="radio" value="sombra"> Sombra</label>
+                </div>
+                <label>Riego
+                    <select id="riego" name="riego" required>
+                        <option value="">Seleccionar</option>
+                        <option value="bajo">Bajo</option>
+                        <option value="medio">Medio</option>
+                        <option value="alto">Alto</option>
+                    </select>
+                </label>
+                <label>Notas
+                    <textarea id="notas" name="notas" rows="4"></textarea>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Inventario</legend>
+                <div class="grilla-formulario">
+                    <label>Precio
+                        <input id="precio" name="precio" type="number" min="0" step="0.01" required>
+                    </label>
+                    <label>Stock
+                        <input id="stock" name="stock" type="number" min="0" step="1" required>
+                    </label>
+                    <label>Fecha de ingreso
+                        <input id="fechaIngreso" name="fechaIngreso" type="date" required>
+                    </label>
+                    <label class="opcion-formulario"><input id="aptaMascotas" name="aptaMascotas" type="checkbox"> Apta para mascotas</label>
+                </div>
+                <div class="grupo-opciones">
+                    <span>Etiquetas</span>
+                    <label><input name="etiquetas" type="checkbox" value="purificadora"> Purificadora</label>
+                    <label><input name="etiquetas" type="checkbox" value="floración"> Floración</label>
+                    <label><input name="etiquetas" type="checkbox" value="colgante"> Colgante</label>
+                    <label><input name="etiquetas" type="checkbox" value="resistente"> Resistente</label>
+                </div>
+            </fieldset>
+
+            <p id="mensaje-planta-form" class="mensaje-formulario" aria-live="polite"></p>
+            <div class="acciones-formulario">
+                <button class="boton-principal" type="submit">Guardar planta</button>
+                <a class="boton-secundario" href="listado.html">Cancelar</a>
+            </div>
+        </form>
+    </main>
+
+    <footer class="footer-vivero">
+        <div><strong>Vivero Raíz</strong><p>Avenida la Plata 1701,Boedo, Buenos Aires</p></div>
+        <div><strong>Secciones</strong><p><a href="./catalogo.html">Catálogo</a> · <a href="./contacto.html">Contacto</a></p></div>
+        <div><strong>Horarios</strong><p>Lunes a viernes de 09:00 a 18:30</p></div>
+        <p class="copyright">© 2026 Vivero Raíz</p>
+    </footer>
+</body>
+</html>

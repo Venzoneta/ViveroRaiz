@@ -1,48 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Login - Raiz</title>
-  <script src=""></script>
-  <link rel="stylesheet" href="./styles/login-styles.css" />
-  <!-- <link rel="" href="./index.html" /> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingresar - Vivero Raíz</title>
+    <link rel="stylesheet" href="./styles/login-styles.css">
+    <script src="./components/scripts/sesion.js" defer></script>
+    <script src="./components/scripts/validaciones.js" defer></script>
 </head>
-
-<body>
-  <div class="container" id="container">
-    <div class="container-login" id="">
-      <div class="form-container sign-in-container">
-        <form>
-          <img src="./components/images/logo-vivero-raiz.png" class="logo-register" alt="" style="max-width: 55%;">
-          <h2>Ingresa con tu cuenta</h2>
-          <input type="email" placeholder="Email" />
-          <input type="password" placeholder="Contraseña" />
-          <a href="">¿Olvidaste tu contraseña?</a>
-          <a href="./index.html">
-            <button>INGRESAR</button>
-          </a>
-        </form>
-        <div class="contenedor-boton-ingresar">
-          <a href="index.html" class="boton-ingresar">
-            INGRESAR
-          </a>
-        </div>
-      </div>
-      <div class="overlay-container">
-        <div class="overlay">
-          <div class="overlay-panel overlay-right">
-            <h1>¿No tenes una cuenta?</h1>
-            <a href="registro.html">
-              <button class="ghost" id="signUp">REGISTRATE</button>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <footer>
+<body class="pagina-autenticacion">
+    <main class="auth-card">
+        <aside class="auth-panel-lateral">
+            <a href="./index.html"><img src="./components/images/logo-vivero-raiz.png" alt="Logo de Vivero Raíz" class="auth-logo"></a>
+            <h1>Vivero Raiz.</h1>
+        </aside>
+        <section class="auth-panel-formulario">
+            <form id="form-login" novalidate>
+                <h2>Ingresar</h2>                <p class="mensaje-formulario" role="status" hidden></p>
+                <label for="email">Correo electronico</label>
+                <input type="email" id="email" name="email" placeholder="mail@mail.com" required>
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Ingresar</button>
+                <div class="enlaces-auth"><a href="#">¿Olvidaste tu contraseña?</a><a href="./registro.html">Registrate</a></div>
+            </form>
+        </section>
+    </main>
+    <footer class="footer-vivero">
+        <div><strong>Vivero Raíz</strong><p>Avenida la Plata 1701,Boedo, Buenos Aires</p></div>
+        <div><strong>Secciones</strong><p><a href="./catalogo.html">Catálogo</a> · <a href="./contacto.html">Contacto</a></p></div>
+        <div><strong>Horarios</strong><p>Lunes a viernes de 09:00 a 18:30</p></div>
+        <p class="copyright">© 2026 Vivero Raíz</p>
     </footer>
 </body>
-
 </html>

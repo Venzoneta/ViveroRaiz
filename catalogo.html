@@ -1,132 +1,60 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catalogo - Raiz</title>
+    <title>Catálogo - Vivero Raíz</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/styles.css">
+    <script src="./components/scripts/sesion.js" defer></script>
+    <script src="./components/scripts/datos.js" defer></script>
+    <script src="./components/scripts/carrito.js" defer></script>
+    <script src="./components/scripts/catalogo.js" defer></script>
+    <script src="./components/scripts/validaciones.js" defer></script>
 </head>
-
 <body class="pagina-catalogo">
     <header class="header-vivero">
-        <a href="index.html"> <img src="./components/images/logo-vivero-raiz.png" alt="Logo Raíz"
-                class="logo-vivero-raiz"></a>
+        <a href="./index.html"><img src="./components/images/logo-vivero-raiz.png" alt="Logo de Vivero Raíz" class="logo-vivero-raiz"></a>
+        <button type="button" class="boton-menu" aria-expanded="false" aria-controls="menu-principal">Menú</button>
         <div class="botones-usuario">
-            <a href="./login.html" class="boton-login">Login</a>
-            <a href="./registro.html" class="boton-registro">Register</a>
+            <a href="#carrito" class="boton-carrito-header">Carrito (<span data-contador-carrito>0</span>)</a>
+            <a href="./login.html" class="boton-login">Ingresar</a>
+            <a href="./registro.html" class="boton-registro">Registrarse</a>
         </div>
     </header>
-
-    <nav class="nav-vivero">
+    <nav class="nav-vivero" id="menu-principal">
         <a href="./index.html">Inicio</a>
-        <a href="./catalogo.html">Catalogo</a>
-        <a href="./planta.html">Plantas</a>
+        <a href="./catalogo.html">Catálogo</a>
         <a href="./contacto.html">Contacto</a>
         <a href="./nosotros.html">Nosotros</a>
-
+        <a href="./listado.html">Intranet</a>
     </nav>
     <main class="catalogo">
-        <section class="productos">
-            <article class="tarjeta">
-                <img src="./components/images/dieffenbachia-camila-c17.jpg" alt="Planta cactus">
-
-                <div class="informacion">
-                    <h3>Dieffenbachia Camila</h3>
-                    <p>Planta de interior tropical que pertenece a la familia de las Aráceas</p>
-                    <span class="precio">$6.000</span>
-                    <a href="./planta.html">
-                        <button type="button">Comprar</button></a>
-                </div>
-            </article>
-            <article class="tarjeta">
-                <img src="./components/images/areca.jpg" alt="Areca">
-
-                <div class=" informacion">
-                    <h3>Areca</h3>
-                    <p>Planta tropical originaria de Madagascar ideal para la decoración en interiores.</p>
-                    <span class="precio">$34.000</span>
-                    <button type="button">Comprar</button>
-                </div>
-            </article>
-
-            <article class="tarjeta">
-                <img src="./components/images/alocasia-amazonica.jpg" alt="Planta suculenta">
-
-                <div class="informacion">
-                    <h3>Alocasia Amazonica</h3>
-                    <p>Alocasia Amazónica es una planta de interior que pertenece a la familia de las Araceae</p>
-                    <span class="precio">$35.000</span>
-                    <button type="button">Comprar</button>
-                </div>
-            </article>
-
-            <article class="tarjeta">
-                <img src="./components/images/nephrolepsis.jpg" alt="Planta Potus">
-
-                <div class="informacion">
-                    <h3>Helecho Espada</h3>
-                    <p>El helecho doméstico más popular para espacios interiores</p>
-                    <span class="precio">$28.500</span>
-                    <button type="button">Comprar</button>
-                </div>
-            </article>
-
-            <article class="tarjeta">
-                <img src="./components/images/azalea-jap-2-3l-vda-1530.jpg" alt="Planta cactus">
-
-                <div class="informacion">
-                    <h3>Azalea Japónica</h3>
-                    <p>Azalea Japónica es una planta de exterior popularmente conocida como Azalea Híbrida.</p>
-                    <span class="precio">$26.000</span>
-                    <button type="button">Comprar</button>
-                </div>
-            </article>
-            <article class="tarjeta">
-                <img src="./components/images/gardenia-jasminoides-m13.jpg" alt="Planta Monstera">
-
-                <div class="informacion">
-                    <h3>Gardenia Jasminoides</h3>
-                    <p>La Gardenia, originaria de Asia y África, es una planta conocida por sus flores blancas y su
-                        fragancia embriagadora.</p>
-                    <span class="precio">$37.000</span>
-                    <button type="button">Comprar</button>
-                </div>
-            </article>
-
-            <article class="tarjeta">
-                <img src="./components/images/lavandula-stoechas-v14b.jpg" alt="Planta suculenta">
-
-                <div class="informacion">
-                    <h3>Lavandula Stoechas</h3>
-                    <p>Pequeña, resistente y fácil de cuidar.</p>
-                    <span class="precio">$22.000</span>
-                    <button type="button">Comprar</button>
-                </div>
-            </article>
-
-            <article class="tarjeta">
-                <img src="./components/images/tillandsia-anita-m09.jpg" alt="Planta Potus">
-
-                <div class="informacion">
-                    <h3>Tillandsia Cyanea Anita</h3>
-                    <p>Planta de tipo tropical muy utilizada para la decoración de interiores debido a su particular
-                        estructura.</p>
-                    <span class="precio">$48.500</span>
-                    <button type="button">Comprar</button>
-                </div>
-            </article>
-
-
+        <h1>Catálogo de plantas</h1>
+        <p>Explorá nuestras especies y encontrá la más adecuada para tu espacio.</p>
+        <section class="filtros-catalogo" aria-label="Filtros del catálogo">
+            <label>Buscar<input type="search" id="buscar-planta" placeholder="Nombre común o científico"></label>
+            <label>Categoría<select id="categoria-planta"><option value="todas">Todas</option><option value="interior">Interior</option><option value="exterior">Exterior</option><option value="suculenta">Suculenta</option><option value="aromática">Aromática</option></select></label>
+            <label>Ordenar por<select id="orden-plantas"><option value="nombre">Nombre</option><option value="precio-asc">Menor precio</option><option value="precio-desc">Mayor precio</option></select></label>
+            <button type="button" id="limpiar-filtros">Limpiar</button>
         </section>
+        <p id="contador-resultados" class="contador-resultados" aria-live="polite"></p>
+        <p id="sin-resultados" class="estado-vacio" hidden>No encontramos plantas con ese criterio.</p>
+        <section class="productos" id="productos"></section>
+        <aside class="carrito" id="carrito" aria-labelledby="titulo-carrito">
+            <div class="encabezado-carrito"><h2 id="titulo-carrito">Tu carrito</h2><button type="button" id="vaciar-carrito">Vaciar carrito</button></div>
+            <ul id="items-carrito"></ul>
+            <p class="total-carrito">Total: <strong id="total-carrito">$ 0</strong></p>
+        </aside>
+        <p id="aviso-catalogo" class="aviso-flotante" role="status" hidden></p>
     </main>
-
-<footer class="footer-vivero">
-        <p>© 2026 Vivero Raíz - Todos los derechos reservados.</p>
+    <footer class="footer-vivero">
+        <div><strong>Vivero Raíz</strong><p>Avenida la Plata 1701,Boedo, Buenos Aires</p></div>
+        <div><strong>Secciones</strong><p><a href="./catalogo.html">Catálogo</a> · <a href="./contacto.html">Contacto</a></p></div>
+        <div><strong>Horarios</strong><p>Lunes a viernes de 09:00 a 18:30</p></div>
+        <p class="copyright">© 2026 Vivero Raíz</p>
     </footer>
 </body>
-
 </html>

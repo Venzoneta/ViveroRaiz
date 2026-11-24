@@ -1,68 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login - Raiz</title>
-    <script src=""></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha de planta - Vivero Raíz</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/styles.css" />
-    <!-- <link rel="" href="./index.html" /> -->
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="./components/scripts/sesion.js" defer></script>
+    <script src="./components/scripts/datos.js" defer></script>
+    <script src="./components/scripts/carrito.js" defer></script>
+    <script src="./components/scripts/planta.js" defer></script>
+    <script src="./components/scripts/validaciones.js" defer></script>
 </head>
-
 <body class="pagina-producto">
-    <header class="header-vivero">
-        <a href="./index.html" class="enlace-logo">
-            <img src="./components/images/logo-vivero-raiz.png" alt="Logo de Vivero Raíz" class="logo-vivero-raiz">
-        </a>
-
-        <div class="botones-usuario">
-            <a href="./login.html" class="boton-login">Login</a>
-            <a href="./registro.html" class="boton-registro">Register</a>
-        </div>
-    </header>
-
-    <nav class="nav-vivero">
-        <a href="./index.html">Inicio</a>
-        <a href="./catalogo.html">Catálogo</a>
-        <a href="./planta.html">Plantas</a>
-        <a href="./contacto.html">Contacto</a>
-        <a href="./nosotros.html">Nosotros</a>
-
-    </nav>
-
-    <main class="producto-contenedor">
+    <header class="header-vivero"><a href="./index.html"><img src="./components/images/logo-vivero-raiz.png" alt="Logo de Vivero Raíz" class="logo-vivero-raiz"></a><button type="button" class="boton-menu" aria-expanded="false" aria-controls="menu-principal">Menú</button><div class="botones-usuario"><a href="./catalogo.html" class="boton-carrito-header">Carrito (<span data-contador-carrito>0</span>)</a><a href="./login.html" class="boton-login">Ingresar</a><a href="./registro.html" class="boton-registro">Registrarse</a></div></header>
+    <nav class="nav-vivero" id="menu-principal"><a href="./index.html">Inicio</a><a href="./catalogo.html">Catálogo</a><a href="./contacto.html">Contacto</a><a href="./nosotros.html">Nosotros</a><a href="./listado.html">Intranet</a></nav>
+    <main class="producto-contenedor" id="ficha-planta">
         <article class="producto-detalle">
-            <div class="producto-imagen">
-                <img src="./components/images/dieffenbachia-camila-c17.jpg" alt="Planta Dieffenbachia Camila">
-            </div>
-
+            <div class="producto-galeria"><img id="planta-imagen" src="./components/images/dieffenbachia-camila-c17.jpg" alt="Planta"></div>
             <div class="producto-informacion">
-                <h1>Dieffenbachia Camila</h1>
-
-                <span class="producto-precio">$6.000</span>
-
-                <p class="producto-descripcion">
-                    La Dieffenbachia Camila es una planta de interior
-                    tropical. Se destaca por sus hojas verdes con zonas
-                    claras y es ideal para decorar ambientes interiores.
-                </p>
-
-                <button type="button" class="boton-carrito">
-                    Añadir al carrito
-                </button>
+                <h1 id="planta-nombre"></h1><p id="planta-cientifico" class="nombre-cientifico"></p><span id="planta-precio" class="producto-precio"></span>
+                <table class="tabla-especificaciones"><tbody><tr><th>Categoría</th><td id="planta-categoria"></td></tr><tr><th>Luz</th><td id="planta-luz"></td></tr><tr><th>Riego</th><td id="planta-riego"></td></tr><tr><th>Stock</th><td id="planta-stock"></td></tr><tr><th>Apta mascotas</th><td id="planta-mascotas"></td></tr><tr><th>Ingreso</th><td id="planta-fecha"></td></tr><tr><th>Etiquetas</th><td id="planta-etiquetas"></td></tr></tbody></table>
+                <button type="button" class="boton-carrito" id="agregar-ficha">Añadir al carrito</button><p id="mensaje-ficha" class="mensaje-formulario" role="status" hidden></p>
             </div>
         </article>
+        <section class="cuidados-producto"><h2>Cuidados particulares</h2><p id="planta-cuidados"></p></section>
     </main>
-
     <footer class="footer-vivero">
-        <p>© 2026 Vivero Raíz</p>
-        <p>Todos los derechos reservados.</p>
+        <div><strong>Vivero Raíz</strong><p>Avenida la Plata 1701,Boedo, Buenos Aires</p></div>
+        <div><strong>Secciones</strong><p><a href="./catalogo.html">Catálogo</a> · <a href="./contacto.html">Contacto</a></p></div>
+        <div><strong>Horarios</strong><p>Lunes a viernes de 09:00 a 18:30</p></div>
+        <p class="copyright">© 2026 Vivero Raíz</p>
     </footer>
 </body>
-
 </html>

@@ -1,112 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login - Raiz</title>
-    <script src=""></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Vivero Raíz</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/styles.css" />
-    <!-- <link rel="" href="./index.html" /> -->
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="./components/scripts/sesion.js" defer></script>
+    <script src="./components/scripts/validaciones.js" defer></script>
 </head>
-
-<body class="pagina-inicio">    <header class="header-vivero">
-        <a href="index.html"> <img src="./components/images/logo-vivero-raiz.png" alt="Logo Raíz"
-                class="logo-vivero-raiz"></a>
+<body class="pagina-inicio">
+    <header class="header-vivero">
+        <a href="./index.html"><img src="./components/images/logo-vivero-raiz.png" alt="Logo de Vivero Raíz" class="logo-vivero-raiz"></a>
+        <button type="button" class="boton-menu" aria-expanded="false" aria-controls="menu-principal">Menú</button>
         <div class="botones-usuario">
-            <a href="./login.html" class="boton-login">Login</a>
-            <a href="./registro.html" class="boton-registro">Register</a>
+            <a href="./login.html" class="boton-login">Ingresar</a>
+            <a href="./registro.html" class="boton-registro">Registrarse</a>
         </div>
     </header>
-    <nav class="nav-vivero">
+    <nav class="nav-vivero" id="menu-principal">
         <a href="./index.html">Inicio</a>
         <a href="./catalogo.html">Catálogo</a>
-        <a href="./planta.html">Plantas</a>
         <a href="./contacto.html">Contacto</a>
         <a href="./nosotros.html">Nosotros</a>
+        <a href="./listado.html">Intranet</a>
     </nav>
-
     <main class="inicio-contenedor">
-
-    <section class="banner-inicio">
-        <img
-            src="./components/images/banner.jpg"
-            alt="Plantas del Vivero Raíz"
-        >
-
-        <div class="banner-contenido">
-            <h1>Plantas para llenar de vida tu hogar</h1>
-
-            <p>
-                Descubrí nuestra variedad de plantas de interior y exterior.
-            </p>
-
-            <a href="./catalogo.html" class="boton-banner">
-                Ver catálogo
-            </a>
-        </div>
-    </section>
-    <section class="galeria-inicio">
-        <h2>Conocé nuestras plantas</h2>
-
-        <div class="grilla-inicio">
-            <a href="./catalogo.html" class="foto-inicio">
-                <img
-                    src="./components/images/areca.jpg"
-                    alt="Planta Areca"
-                >
-                <h3>Areca</h3>
-            </a>
-
-            <a href="./catalogo.html" class="foto-inicio">
-                <img
-                    src="./components/images/alocasia-amazonica.jpg"
-                    alt="Alocasia Amazónica"
-                >
-                <h3>Alocasia Amazónica</h3>
-            </a>
-
-            <a href="./catalogo.html" class="foto-inicio">
-                <img
-                    src="./components/images/nephrolepsis.jpg"
-                    alt="Helecho Espada"
-                >
-                <h3>Helecho Espada</h3>
-            </a>
-
-            <a href="./catalogo.html" class="foto-inicio">
-                <img
-                    src="./components/images/azalea-jap-2-3l-vda-1530.jpg"
-                    alt="Azalea Japónica"
-                >
-                <h3>Azalea Japónica</h3>
-            </a>
-
-            <a href="./catalogo.html" class="foto-inicio">
-                <img
-                    src="./components/images/gardenia-jasminoides-m13.jpg"
-                    alt="Gardenia Jasminoides"
-                >
-                <h3>Gardenia</h3>
-            </a>
-
-            <a href="./catalogo.html" class="foto-inicio">
-                <img
-                    src="./components/images/lavandula-stoechas-v14b.jpg"
-                    alt="Lavandula Stoechas"
-                >
-                <h3>Lavandula</h3>
-            </a>
-        </div>
-    </section>
-</main>
+        <section class="banner-inicio">
+            <img src="./components/images/banner.jpg" alt="Plantas del Vivero Raíz">
+            <div class="banner-contenido">
+                <h1>Plantas para llenar de vida tu hogar</h1>
+                <p>Encontrá plantas de interior y exterior con la información necesaria para cuidarlas.</p>
+                <div class="acciones-banner">
+                    <a href="./catalogo.html" class="boton-banner">Ver catálogo</a>
+                    <a href="./contacto.html" class="boton-banner boton-claro">Cómo llegar</a>
+                </div>
+            </div>
+        </section>
+        <section class="galeria-inicio">
+            <h2>Elegí por dónde vas a ponerla</h2>
+            <div class="grilla-inicio">
+                <a href="./catalogo.html" class="foto-inicio"><img src="./components/images/areca.jpg" alt="Planta Areca para interiores"><h3>Interior</h3><p>Plantas para ambientes luminosos sin sol directo.</p></a>
+                <a href="./catalogo.html" class="foto-inicio"><img src="./components/images/azalea-jap-2-3l-vda-1530.jpg" alt="Azalea para exteriores"><h3>Exterior</h3><p>Especies resistentes para balcones y jardines.</p></a>
+                <a href="./catalogo.html" class="foto-inicio"><img src="./components/images/lavandula-stoechas-v14b.jpg" alt="Lavanda aromática"><h3>Aromáticas</h3><p>Perfume y floración para espacios con sol.</p></a>
+            </div>
+        </section>
+        <section class="presentacion-inicio">
+            <img src="./components/images/nosotros.jpg" alt="Interior del Vivero Raíz">
+            <div>
+                <h2>Un vivero, no un depósito</h2>
+                <p>Seleccionamos cada planta y te acompañamos para que encuentre su lugar en tu casa.</p>
+                <a href="./nosotros.html" class="boton-principal">Conocé el vivero</a>
+            </div>
+        </section>
+    </main>
     <footer class="footer-vivero">
-        <p>© 2026 Vivero Raíz - Todos los derechos reservados.</p>
+        <div><strong>Vivero Raíz</strong><p>Avenida la Plata 1701,Boedo, Buenos Aires</p></div>
+        <div><strong>Secciones</strong><p><a href="./catalogo.html">Catálogo</a> · <a href="./contacto.html">Contacto</a></p></div>
+        <div><strong>Horarios</strong><p>Lunes a viernes de 09:00 a 18:30</p></div>
+        <p class="copyright">© 2026 Vivero Raíz</p>
     </footer>
 </body>
-
 </html>

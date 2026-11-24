@@ -1,74 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login - Raiz</title>
-    <script src=""></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros - Vivero Raíz</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/styles.css" />
-    <!-- <link rel="" href="./index.html" /> -->
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="./components/scripts/sesion.js" defer></script>
+    <script src="./components/scripts/validaciones.js" defer></script>
 </head>
-
 <body class="pagina-nosotros">
-    <header class="header-vivero">
-        <a href="./index.html" class="enlace-logo">
-            <img src="./components/images/logo-vivero-raiz.png" alt="Logo de Vivero Raíz" class="logo-vivero-raiz">
-        </a>
-
-        <div class="botones-usuario">
-            <a href="./login.html" class="boton-login">Login</a>
-            <a href="./registro.html" class="boton-registro">Register</a>
-        </div>
-    </header>
-
-    <nav class="nav-vivero">
-        <a href="./index.html">Inicio</a>
-        <a href="./catalogo.html">Catálogo</a>
-        <a href="./planta.html">Plantas</a>
-        <a href="./contacto.html">Contacto</a>
-        <a href="./nosotros.html">Nosotros</a>
-
-    </nav>
-
+    <header class="header-vivero"><a href="./index.html"><img src="./components/images/logo-vivero-raiz.png" alt="Logo de Vivero Raíz" class="logo-vivero-raiz"></a><button type="button" class="boton-menu" aria-expanded="false" aria-controls="menu-principal">Menú</button><div class="botones-usuario"><a href="./login.html" class="boton-login">Ingresar</a><a href="./registro.html" class="boton-registro">Registrarse</a></div></header>
+    <nav class="nav-vivero" id="menu-principal"><a href="./index.html">Inicio</a><a href="./catalogo.html">Catálogo</a><a href="./contacto.html">Contacto</a><a href="./nosotros.html">Nosotros</a><a href="./listado.html">Intranet</a></nav>
     <main class="nosotros-contenedor">
-        <section class="historia-vivero">
-            <div class="historia-imagen">
-                <img src="./components/images/nosotros.jpg" alt="Interior de Vivero Raíz">
-            </div>
-
-            <div class="historia-texto">
-                <h1>Nuestra historia</h1>
-
-                <p>
-                    Vivero Raíz nació como un pequeño proyecto familiar,
-                    inspirado por el amor a las plantas y la naturaleza.
-                    Comenzamos cultivando algunas especies en nuestro jardín
-                    y compartiéndolas con amigos y vecinos.
-                </p>
-
-                <p>
-                    Con el paso del tiempo, el proyecto fue creciendo y se
-                    convirtió en un espacio dedicado a ofrecer plantas de
-                    interior y exterior para todo tipo de hogares.
-                </p>
-
-                <p>
-                    Actualmente continuamos trabajando con la misma dedicación,
-                    ayudando a cada persona a encontrar una planta adecuada
-                    para su espacio y enseñándole cómo cuidarla.
-                </p>
-            </div>
-        </section>
+        <section class="historia-vivero"><div class="historia-imagen"><img src="./components/images/nosotros.jpg" alt="Interior de Vivero Raíz"></div><div class="historia-texto"><h1>Nuestra historia</h1><p>Vivero Raíz nació como un pequeño proyecto inspirado por el amor a las plantas y la naturaleza</p><p>Con el paso del tiempo se convirtió en un espacio dedicado a ofrecer especies de interior y exterior para todo tipo de hogares.</p><p>Hoy seguimos acompañando a cada persona para que encuentre una planta adecuada y aprenda a cuidarla.</p></div></section>
+        <section class="equipo-vivero"><h2>Nuestro equipo</h2><div class="grilla-equipo"><article><span>FF</span><h3>Facundo Farias</h3><p>Atencion y asesoramiento</p></article><article><span>FG</span><h3>Facundo Gulli</h3><p>Cultivo y cuidados</p></article><article><span>RA</span><h3>Rodrigo Auzmendi</h3><p>Administración</p></article></div></section>
+        <section class="linea-tiempo"><h2>Cómo crecimos</h2><div><article><strong>2018</strong><p>Comenzamos cultivando en nuestro propio jardin.</p></article><article><strong>2021</strong><p>Abrimos nuestro primer local.</p></article><article><strong>2026</strong><p>Estamos en la web.</p></article></div></section>
     </main>
-
     <footer class="footer-vivero">
-        <p>© 2026 Vivero Raíz - Todos los derechos reservados.</p>
+        <div><strong>Vivero Raíz</strong><p>Avenida la Plata 1701,Boedo, Buenos Aires</p></div>
+        <div><strong>Secciones</strong><p><a href="./catalogo.html">Catálogo</a> · <a href="./contacto.html">Contacto</a></p></div>
+        <div><strong>Horarios</strong><p>Lunes a viernes de 09:00 a 18:30</p></div>
+        <p class="copyright">© 2026 Vivero Raíz</p>
     </footer>
 </body>
-
 </html>

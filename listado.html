@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock| Vivero Raíz</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="components/scripts/sesion.js" defer></script>
+    <script src="components/scripts/datos.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+    <script src="components/scripts/listado.js" defer></script>
+    <script src="components/scripts/validaciones.js" defer></script>
+</head>
+<body data-protegida="true">
+    <header class="header-vivero">
+        <a href="index.html"><img src="components/images/logo-vivero-raiz.png" alt="Logo de Vivero Raíz" class="logo-vivero-raiz"></a>
+        <button type="button" class="boton-menu" aria-expanded="false" aria-controls="menu-principal">Menú</button>
+        <div class="botones-usuario">
+            <a href="login.html" class="boton-login">Ingresar</a>
+            <a href="registro.html" class="boton-registro">Registrarse</a>
+        </div>
+    </header>
+    <nav class="nav-vivero" id="menu-principal">
+        <a href="index.html">Inicio</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="listado.html">Intranet</a>
+    </nav>
+
+    <main class="intranet-contenedor">
+        <div class="encabezado-seccion">
+            <div>
+                <h1>Listado de stock</h1>
+            </div>
+            <a class="boton-principal" href="planta-form.html">Agregar planta</a>
+        </div>
+
+        <section class="panel-grafico" aria-labelledby="titulo-grafico">
+            <div>
+                <p class="etiqueta-seccion">Resumen del inventario</p>
+            </div>
+            <div class="grafico-contenedor">
+                <canvas id="grafico-stock"></canvas>
+            </div>
+        </section>
+
+        <p id="mensaje-listado" class="mensaje-formulario" aria-live="polite"></p>
+
+        <div class="tabla-contenedor">
+            <table class="tabla-listado">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Categoría</th>
+                        <th>Precio</th>
+                        <th>Stock</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="cuerpo-listado"></tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer class="footer-vivero">
+        <div><strong>Vivero Raíz</strong><p>Avenida la Plata 1701,Boedo, Buenos Aires</p></div>
+        <div><strong>Secciones</strong><p><a href="./catalogo.html">Catálogo</a> · <a href="./contacto.html">Contacto</a></p></div>
+        <div><strong>Horarios</strong><p>Lunes a viernes de 09:00 a 18:30</p></div>
+        <p class="copyright">© 2026 Vivero Raíz</p>
+    </footer>
+</body>
+</html>
